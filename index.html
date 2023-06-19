@@ -7,6 +7,8 @@
       text-align: center;
       font-family: Arial, sans-serif;
       background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
     }
 
     #cover {
@@ -63,13 +65,46 @@
         margin: 5px;
         font-size: 16px;
       }
+      
+      #cover img {
+        max-width: 150px;
+        max-height: 150px;
+        margin-top: 10px;
+      }
+    }
+    
+    /* Laptop Styles */
+    @media only screen and (min-width: 601px) {
+      #cover {
+        height: 600px;
+      }
+      
+      #cover h1 {
+        font-size: 48px;
+        padding-top: 250px;
+      }
+      
+      #booking-links {
+        margin-top: 100px;
+      }
+      
+      #booking-links a {
+        font-size: 24px;
+        padding: 15px 30px;
+      }
+      
+      #cover img {
+        max-width: 200px;
+        max-height: 200px;
+        margin-top: 20px;
+      }
     }
   </style>
 </head>
 <body>
   <div id="cover">
-    <h1>Welcome to</h1>
-    <img src="Capture.PNG" alt="Logo" class="src" style="max-width: 200px; margin-top: 10px;">
+    <h1>Welcome to A+Zone</h1>
+    <img src="Capture.PNG" alt="Logo" class="src">
   </div>
 
   <div id="booking-links">
