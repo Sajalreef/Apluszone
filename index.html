@@ -1,103 +1,87 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A+ zone</title>
-  <style>
-    body {
-      text-align: center;
-      font-family: Arial, sans-serif;
-      background-color: #223e4c;
-      margin: 0;
-      padding: 0;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
 
-    #cover {
-      position: relative;
-      overflow: hidden;
-      height: 400px;
-    }
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("pic1.png");
+  height: 100%;
+}
 
-    #cover img {
-      max-width: 300px;
-      max-height: 300px;
-      width: auto;
-      height: auto;
-      margin: 0 auto 20px; /* Adjust the margin as needed */
-      display: block;
-    }
+.caption {
+  position: absolute;
+  left: 0;
+  top: calc(50% + 100px);
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
 
-    #cover h1 {
-      color: white;
-      font-size: 36px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-      margin: 0;
-      padding: 0;
-    }
+.caption .button {
+  display: block;
+  width: 50%;
+  margin: 5px auto;
+}
 
-    #booking-links {
-      margin-top: 50px;
-    }
+.caption .button:first-child {
+  margin-bottom: 30px;
+}
 
-    #booking-links a {
-      display: inline-block;
-      text-decoration: none;
-      background-color: #078eca;
-      color: white;
-      padding: 12px 24px;
-      margin: 15px;
-      border-radius: 8px;
-      font-size: 20px;
-      transition: background-color 0.3s ease;
-    }
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
 
-    #booking-links a:hover {
-      background-color: #0056b3;
-    }
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
 
-    /* Responsive Styles */
-    @media only screen and (max-width: 600px) {
-      #cover {
-        height: 200px;
-      }
-
-      #cover img {
-        max-width: 250px;
-        max-height: 250px;
-        margin: 0 auto 20px;
-      }
-
-      #cover h1 {
-        font-size: 48px;
-        margin-bottom: 80px;
-      }
-
-      #booking-links {
-        margin-top: 100px;
-      }
-
-      #booking-links a {
-        padding: 20px 20px;
-        margin: 20px;
-        font-size: 18px;
-      }
-    }
-  </style>
+.button {
+  background-color: #078eca;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+</style>
 </head>
 <body>
-  <div id="cover">
-    <h1> </h1>
-    <img src="Capture.PNG" alt="Logo Image">
-    
-  </div>
 
-  <div id="booking-links">
-    <a href="https://outlook.office365.com/owa/calendar/AZone@Sajalreefgroup.com/bookings/">Erbil</a>
-    <a href="https://outlook.office365.com/owa/calendar/AZoneBookingBaghdad@Sajalreefgroup.com/bookings/">Baghdad</a>
+<div class="bgimg-1">
+  <div class="caption">
+    <a href="https://outlook.office365.com/owa/calendar/AZoneBookingBaghdad@Sajalreefgroup.com/bookings/" class="button">Baghdad</a>
+    <a href="https://outlook.office365.com/owa/calendar/AZone@Sajalreefgroup.com/bookings/" class="button">Erbil</a>
   </div>
+</div>
+
+<p style="padding:5px 15px"></p>
+
 </body>
 </html>
